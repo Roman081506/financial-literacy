@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансовая грамотность: как управлять деньгами без стресса</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Финансовая грамотность: как управлять деньгами без стресса</h1>
+            <p class="subtitle">Практические советы для достижения финансовой свободы</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#budget">Бюджет</a></li>
+                <li><a href="#credit">Кредиты</a></li>
+                <li><a href="#savings">Сбережения</a></li>
+                <li><a href="#investments">Инвестиции</a></li>
+                <li><a href="#security">Безопасность</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="budget" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-chart-pie"></i>
+                    <h2>Учет доходов и расходов</h2>
+                </div>
+                <div class="content-grid">
+                    <div class="text-content">
+                        <h3>Как вести бюджет эффективно</h3>
+                        <p>Научитесь контролировать свои финансы с помощью простых и эффективных методов учета.</p>
+                        <ul class="feature-list">
+                            <li>Правило 50/30/20</li>
+                            <li>Мобильные приложения для учета</li>
+                            <li>Планирование крупных покупок</li>
+                        </ul>
+                    </div>
+                    <div class="calculator-widget">
+                        <h3>Калькулятор бюджета</h3>
+                        <form id="budgetCalculator">
+                            <div class="input-group">
+                                <label>Доход в месяц:</label>
+                                <input type="number" id="income" placeholder="Введите сумму">
+                            </div>
+                            <div class="input-group">
+                                <label>Обязательные расходы:</label>
+                                <input type="number" id="expenses" placeholder="Введите сумму">
+                            </div>
+                            <button type="submit">Рассчитать</button>
+                        </form>
+                        <div id="budgetResult" class="result-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="credit" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-credit-card"></i>
+                    <h2>Кредиты и долги</h2>
+                </div>
+                <div class="content-grid">
+                    <div class="text-content">
+                        <h3>Как избежать долговой ямы</h3>
+                        <p>Правильное использование кредитов и управление долгами.</p>
+                        <div class="tips-box">
+                            <h4>Важные правила:</h4>
+                            <ul>
+                                <li>Не берите кредит на сумму больше 30% годового дохода</li>
+                                <li>Всегда читайте договор полностью</li>
+                                <li>Создайте резервный фонд перед взятием кредита</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="calculator-widget">
+                        <h3>Кредитный калькулятор</h3>
+                        <form id="creditCalculator">
+                            <div class="input-group">
+                                <label>Сумма кредита:</label>
+                                <input type="number" id="loanAmount" placeholder="Введите сумму">
+                            </div>
+                            <div class="input-group">
+                                <label>Процентная ставка:</label>
+                                <input type="number" id="interestRate" placeholder="Введите ставку">
+                            </div>
+                            <div class="input-group">
+                                <label>Срок (месяцев):</label>
+                                <input type="number" id="loanTerm" placeholder="Введите срок">
+                            </div>
+                            <button type="submit">Рассчитать</button>
+                        </form>
+                        <div id="creditResult" class="result-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="savings" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h2>Сбережения и "подушка безопасности"</h2>
+                </div>
+                <div class="content-grid">
+                    <div class="text-content">
+                        <h3>Создание финансовой подушки</h3>
+                        <p>Как накопить на важные цели и создать резервный фонд.</p>
+                        <div class="progress-tracker">
+                            <h4>Ваш прогресс:</h4>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%"></div>
+                            </div>
+                            <p>Цель: 6 месячных зарплат</p>
+                        </div>
+                    </div>
+                    <div class="calculator-widget">
+                        <h3>Калькулятор сбережений</h3>
+                        <form id="savingsCalculator">
+                            <div class="input-group">
+                                <label>Ежемесячный доход:</label>
+                                <input type="number" id="monthlyIncome" placeholder="Введите сумму">
+                            </div>
+                            <div class="input-group">
+                                <label>Процент от дохода:</label>
+                                <input type="number" id="savingsPercentage" placeholder="Введите процент">
+                            </div>
+                            <button type="submit">Рассчитать</button>
+                        </form>
+                        <div id="savingsResult" class="result-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="investments" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Инвестиции для начинающих</h2>
+                </div>
+                <div class="content-grid">
+                    <div class="text-content">
+                        <h3>С чего начать инвестировать</h3>
+                        <p>Базовые принципы инвестирования и первые шаги.</p>
+                        <div class="investment-tips">
+                            <h4>Основные инструменты:</h4>
+                            <ul>
+                                <li>Банковские вклады</li>
+                                <li>Облигации</li>
+                                <li>Акции</li>
+                                <li>ETF</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="calculator-widget">
+                        <h3>Инвестиционный калькулятор</h3>
+                        <form id="investmentCalculator">
+                            <div class="input-group">
+                                <label>Начальная сумма:</label>
+                                <input type="number" id="initialAmount" placeholder="Введите сумму">
+                            </div>
+                            <div class="input-group">
+                                <label>Ежемесячные вложения:</label>
+                                <input type="number" id="monthlyInvestment" placeholder="Введите сумму">
+                            </div>
+                            <div class="input-group">
+                                <label>Ожидаемая доходность (%):</label>
+                                <input type="number" id="expectedReturn" placeholder="Введите процент">
+                            </div>
+                            <button type="submit">Рассчитать</button>
+                        </form>
+                        <div id="investmentResult" class="result-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="security" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h2>Финансовая безопасность</h2>
+                </div>
+                <div class="content-grid">
+                    <div class="text-content">
+                        <h3>Защита от мошенников</h3>
+                        <p>Как обезопасить свои финансы от мошенничества.</p>
+                        <div class="security-checklist">
+                            <h4>Чек-лист безопасности:</h4>
+                            <ul>
+                                <li>Никогда не сообщайте CVV-код</li>
+                                <li>Используйте сложные пароли</li>
+                                <li>Включите двухфакторную аутентификацию</li>
+                                <li>Регулярно проверяйте выписки</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="quiz-widget">
+                        <h3>Проверьте свои знания</h3>
+                        <div id="securityQuiz">
+                            <div class="quiz-question">
+                                <p>Что делать, если вам звонят из "банка"?</p>
+                                <div class="quiz-options">
+                                    <button class="quiz-option">Сообщить данные карты</button>
+                                    <button class="quiz-option">Перезвонить в банк</button>
+                                    <button class="quiz-option">Ничего не сообщать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
